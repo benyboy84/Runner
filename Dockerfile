@@ -25,6 +25,6 @@ RUN wget -O /tmp/tflint.zip https://github.com/terraform-linters/tflint/releases
 RUN pip3 install checkov
 
 # Get Terragrunt by a specific version or search for the latest one
-# Install terragrunt
+# Install terragrunt in the runner
 RUN curl -o /usr/local/bin/terragrunt -fsSL "https://github.com/gruntwork-io/terragrunt/releases/download/v"${TG_VERSION}"/terragrunt_linux_amd64" \
  && chmod +x /usr/local/bin/terragrunt
